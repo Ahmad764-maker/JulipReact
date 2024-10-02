@@ -1,0 +1,115 @@
+section.section7 {
+  background-color: var(--secondryColor);
+  border-radius: 30px;
+  height: fit-content;
+  /* padding: 100px 70px; */
+  margin-bottom: 50px;
+}
+section.section7 .row {
+  /* margin: 50px 30px; */
+  display: flex;
+  justify-content: space-between;
+}
+section.section7 .row .left {
+  padding: 100px 70px;
+  padding-right: 0;
+  width: 60%;
+}
+section.section7 .row .right {
+  padding-top: 40px;
+  padding-left: 80px;
+  width: 40%;
+}
+section.section7 .row .left p.pTop {
+  font-family: "Recoleta Regular DEMO", sans-serif;
+  font-size: 59px;
+  font-weight: 800;
+}
+section.section7 .row .left h2 {
+  font-size: 55px;
+  font-weight: 900;
+  color: var(--mainColor);
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black;
+  margin-bottom: 30px;
+}
+section.section7 .row .left p.pBottom {
+  font-size: 22px;
+  width: 80%;
+  font-weight: 600;
+}
+@media (max-width: 1050px) {
+  section.section7 .row .left p.pTop {
+    font-size: 50px;
+  }
+  section.section7 .row .left h2 {
+    font-size: 45px;
+  }
+  section.section7 .row .left p.pBottom {
+    font-size: 20px;
+    width: 80%;
+  }
+  section.section7 .row .right {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 900px) {
+  section.section7 .row .left p.pTop {
+    font-size: 48px;
+  }
+  section.section7 .row .left h2 {
+    font-size: 42px;
+  }
+  section.section7 .row .left p.pBottom {
+    font-size: 19px;
+    width: 80%;
+  }
+  section.section7 .row .right {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 800px) {
+  section.section7 .row {
+    /* margin: 50px 30px; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  section.section7 .row .left {
+    width: 100%;
+  }
+  section.section7 .row .left p.pTop {
+    font-size: 48px;
+  }
+  section.section7 .row .left h2 {
+    font-size: 42px;
+  }
+  section.section7 .row .left p.pBottom {
+    font-size: 19px;
+    width: 80%;
+  }
+  section.section7 .row .right {
+    padding-left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 520px) {
+  section.section7 .row .left {
+    padding: 0px 0px;
+    text-align: center;
+    padding-right: 0;
+    width: 100%;
+  
+  }
+  section.section7 .row .left p.pTop {
+    font-size: 40px;
+  }
+  section.section7 .row .left h2 {
+    font-size: 35px;
+  }
+  section.section7 .row .left p.pBottom {
+    font-size: 18px;
+    width: 100%;
+  }
+}

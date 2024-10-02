@@ -1,0 +1,48 @@
+section.section3 {
+  height: fit-content;
+  margin: 50px 0;
+}
+section.section3 .container h1 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 140px;
+  margin-bottom: 80px;
+}
+section.section3 .container .row {
+  height: fit-content;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+section.section3 .container .row .left {
+  justify-content: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 600px;
+  padding: 60px 0 40px 0;
+
+}
+section.section3 .container .row .left button {
+  height: 60px;
+  padding: 0 20px;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  /* padding: 30px; */
+  margin-bottom: 40px;
+  background-color: var(--mainColor);
+  /* margin-bottom: 30px; */
+}
+section.section3 .container .row .right {
+  height: 600px;
+  border: 2px solid #3b5e54;
+  border-radius: 30px;
+  width: 60%;
+  padding: 30px;
+  box-shadow: 3px 3px 0ch 0 #3b5e54;
+}
+section.section3 .container .row .right p{
+  font-size: 35px;
+}

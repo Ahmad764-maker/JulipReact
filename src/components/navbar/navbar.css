@@ -1,0 +1,162 @@
+section.nav {
+  position: relative;
+  z-index: 222;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+section.nav img {
+  width: 120px;
+}
+section.nav img.bars {
+  display: none;
+}
+section.nav nav ul {
+  padding-top: 40px;
+  margin-right: 20px;
+  display: flex;
+  gap: 30px;
+}
+section.nav nav ul li a {
+  font-size: 25px;
+  color: #000000;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+section.nav nav ul li a:hover {
+  color: var(--secondryColor);
+}
+section.nav nav ul button {
+  box-shadow: 4px 4px 0ch 0 #3b5e54;
+  color: #000000;
+  font-weight: bold;
+
+  width: 200px;
+  height: 82px;
+  border-radius: 100px;
+  text-align: center;
+  margin-top: -30px;
+  background-color: var(--mainColor);
+  font-size: 24px;
+  transition: all 0.4s;
+}
+section.nav nav ul button:hover {
+  box-shadow: 6px 6px 0ch 0 #3b5e54;
+  color: var(--secondryColor);
+}
+button.modalll {
+  display: none;
+}
+.fixed {
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  background-color: rgba(40, 40, 48, 0.91);
+
+  /* filter: blur(8px); */
+  /* backdrop-filter: blur(4px); */
+}
+@keyframes mymove {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.nav .fixed ul.mod {
+  animation: mymove 0.7s 1;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  background-color: #00000042;
+}
+.fixed ul.mod li {
+  padding-left: 20px;
+  border-bottom: 1px solid rgba(169, 169, 169, 0.627);
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+}
+.fixed ul.mod li ul.drop li:first-child {
+  text-align: left;
+  border: none;
+  margin-right: 20px;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+}
+.fixed ul.mod li:last-child {
+  border: none;
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+}
+.fixed ul.mod li a {
+  font-size: 1rem;
+  color: #fff;
+}
+.fixed ul.mod li a:hover {
+  color: #29a9e0;
+}
+.fixed ul.mod li a:hover span {
+  color: #29a9e0;
+}
+.fixed ul.mod li a span {
+  /* display: block; */
+  color: #fff;
+  font-size: 12px;
+  transition: 0.3s;
+}
+.fixed ul.mod li:first-child {
+  text-align: right;
+  border: none;
+  margin-right: 20px;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+}
+.fixed ul.mod li button {
+  color: #0ca67b;
+  font-size: 20px;
+  transition: 0.2s;
+  font-weight: 600;
+}
+.fixed ul.mod li button.closer {
+  color: #fff;
+}
+.fixed ul.mod li button:hover {
+  color: #29a9e0;
+  font-size: 23px;
+}
+@media (max-width: 1600px) {
+  section.nav nav ul {
+    padding-top: 20px;
+  }
+  section.nav nav ul li a {
+    font-size: 19px;
+  }
+  section.nav nav ul button {
+    width: 163px;
+    height: 52px;
+    margin-top: -20px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  button.modalll {
+    display: block;
+  }
+  section.nav nav {
+    display: none;
+  }
+  section.nav img {
+    width: 100px;
+  }
+  section.nav img.bars {
+    display: block;
+    width: 50px;
+  }
+}

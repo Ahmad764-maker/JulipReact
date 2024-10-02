@@ -1,13 +1,125 @@
+@import url("../src/CabinetGrotesk_Complete/CabinetGrotesk_Complete/Fonts/WEB/css/cabinet-grotesk.css");
+html {
+  font-family: "CabinetGrotesk-Variable", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3 {
+  font-family: "Recoleta Regular DEMO", sans-serif;
+}
+@font-face {
+  font-family: "Recoleta Regular DEMO";
+  font-style: normal;
+  font-weight: normal;
+  src: local("../src/recoleta-cufonfonts-webfont/Recoleta-RegularDEMO.woff"),
+    url("../src/recoleta-cufonfonts-webfont/Recoleta-RegularDEMO.woff")
+      format("woff");
+}
+:root {
+  --mainColor: #dcffba;
+  --secondryColor: #a8baff;
+}
 body {
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+.container2 {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+  color: initial;
+  transition: 0.2s;
+}
+a:hover {
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+  /* align-items: center; */
+}
+.borders {
+  border: 2px solid red;
+}
+button {
+  all: unset;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (min-width: 2000px) {
+  .icon-chevron-up {
+    display: none;
+  }
+}
+@media (min-width: 3842px) {
+  .container {
+    width: 45%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 3841px) {
+  .container {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 2560px) {
+  .container {
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1922px) {
+  .container {
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1000px) {
+  img.dividerPortfolio {
+    width: 55%;
+  }
+}
+@media (max-width: 600px) {
+  img.dividerPortfolio {
+    width: 80%;
+  }
+  .icon-chevron-up {
+    opacity: 0.6;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
+@media (max-width: 400px) {
+  img.dividerPortfolio {
+    width: 95%;
+  }
 }
